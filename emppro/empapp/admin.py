@@ -1,0 +1,6 @@
+from django.contrib import admin
+from .models import Emp
+class EmpAdmin(admin.ModelAdmin):
+    list_display = ['ename','email']
+admin.site.register(Emp,EmpAdmin)
+
